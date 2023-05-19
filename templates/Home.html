@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+     body {
+      background-image: url('/static/Background.jpg');
+      font-family: Arial, sans-serif;
+      background-color: black;
+      padding: 20px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      perspective: 1000px; 
+      justify-content: center; 
+      
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      transform: translateZ(30px);
+      margin-top: 175px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 45px;
+      color: #ccc;
+      transform: translateZ(30px);
+    }
+
+    form {
+      margin-top: 20px;
+      text-align: center;
+      transform-style: preserve-3d; 
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      transform: translateZ(20px);
+      box-shadow: 0 0 1px rgba(255, 255, 255, 0.8); 
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transform: translateZ(20px);
+      box-shadow: 0 0 1px rgba(255, 255, 255, 0.8); 
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+
+
+</style>
+  
+  <title>Search Box</title>
+  </head>
+<body>
+  <h2>AI Semantic search</h2>
+  <h1>FindItAll</h1>
+   <form method="POST" action="/process">
+    <input type="text" name="input_field">
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
